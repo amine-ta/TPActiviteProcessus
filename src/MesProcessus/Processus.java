@@ -38,9 +38,8 @@ public class Processus {
             }
         return message;
         
-      }catch(Exception e){
-            e.printStackTrace();
-            message="utilisation de ce service non-autorisée !!! ";
+      }catch(Exception e){         
+            message="Annee valide entre 1970 et 2010!!! ";
           return message;
       }
     }
