@@ -14,9 +14,7 @@ import java.util.Date;
 public class Processus { 
     String message="Saisir une date inferieur à 2010 ";
     
-    public String processusActivite(String _date){
-        
-      
+    public String processusActivite(String _date){  
       try{  
         Date date = new Date(Integer.parseInt(_date));
         
@@ -39,7 +37,7 @@ public class Processus {
         return message;
         
       }catch(Exception e){         
-            message="Annee valide entre 1970 et 2010!!! ";
+            message="Saisir une annee valide entre 1970 et 2010!!! ";
           return message;
       }
     }
